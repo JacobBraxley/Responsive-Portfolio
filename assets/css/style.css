@@ -8,6 +8,15 @@ h1 {
   background-color: #ffffff;
 }
 
+body {
+  margin:0px;
+}
+
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
 /*Adobe Kuler Teal Complements - 1f5d5a, 84f6f1, 4aaaa5, 5d2e16, aa6b4a */
 a:link { 
   color: #777777; 
@@ -38,7 +47,7 @@ header {
   background: #4aaaa5;
   color: white;
   float: left;
-  width: 270px;
+  height: -webkit-fill-available;
   text-align: center;
   padding: 30px;
   font-size: 32px;
@@ -103,6 +112,7 @@ footer {
   font-size: 12px;
   color: white;
   padding-bottom: 8px;
+  box-sizing: border-box;
 }
 
 /* Page specific */
@@ -157,17 +167,82 @@ footer {
 }
 
 
-/* Width at 980px and below */
 @media screen and (max-width: 980px) {
-
+  .headerContent {
+    width: 100vw;
+  }
+  .mainSection {
+    margin-left: 30px;
+    width: 75vw;
+  }
+  #name {
+    margin-left: 30px;
+  }
 }
 
-/* Width at 768px and below */
 @media screen and (max-width: 768px) {
-
+  .mainSection {
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 85vw;
+  }
+  #name {
+    margin-left: 10px;
+  }
 }
 
-/* Width at 640px and below */
 @media screen and (max-width: 640px) {
+  .mainSection {
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 85vw;
+  }
+  #name {
+    margin: 0px;
+    width: 100vw;
+    height: 40px;
+  }
+  .menulinks {
+    font-size: 16px;
+    float: none;
+    line-height: 40px;
+  }
+  .vertLine {
+    margin: 0px;
+    visibility: hidden;
+  }
 
+  header {
+    height: auto;
+  }
+
+  .headerContent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .links {
+    text-align: center;
+    height: 40px;
+    width: 100vw;
+  }
+
+  .imageSection img {
+    width: 60vw;
+  }
+
+  .imgBannerPair {
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .imageSection {
+    margin-bottom: 50px;
+  }
+
+  .bannerStyle {
+    width: 60vw;
+  } 
 }
+
+
