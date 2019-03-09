@@ -156,6 +156,18 @@ footer {
   margin-bottom: -60px;
 }
 
-@media (max-width: 980px) {
-  
+
+/* Width at 980px and below */
+@media screen and (max-width: 980px) {
+
+}
+
+/* Width at 768px and below */
+@media screen and (max-width: 768px) {
+
+}
+
+/* Width at 640px and below */
+@media screen and (max-width: 640px) {
+
 }
